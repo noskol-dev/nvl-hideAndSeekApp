@@ -1,0 +1,80 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 13, in script
+    "Sun is setting and clouds turn to be yellow-orange now. It's 4:57pm now. Everyone is leaving school now."
+  File "game/script.rpy", line 13, in script
+    "Sun is setting and clouds turn to be yellow-orange now. It's 4:57pm now. Everyone is leaving school now."
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 101, in execute
+    window:
+TypeError: unhashable type: 'RevertableList'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
+    run(restart)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\main.py", line 143, in run
+    renpy.execution.run_context(True)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\execution.py", line 908, in run_context
+    context.run()
+  File "game/script.rpy", line 13, in script
+    "Sun is setting and clouds turn to be yellow-orange now. It's 4:57pm now. Everyone is leaving school now."
+  File "game/script.rpy", line 13, in script
+    "Sun is setting and clouds turn to be yellow-orange now. It's 4:57pm now. Everyone is leaving school now."
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\ast.py", line 671, in execute
+    statement_name("say")
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
+    clear=clear)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\screen.py", line 430, in visit_all
+    callback(self)
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\screen.py", line 440, in per_interact
+    self.update()
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\display\screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 98, in execute
+    screen say(who, what):
+  File "game/screens.rpy", line 101, in execute
+    window:
+  File "H:\Software\Ren.Py\renpy-7.3.5-sdk\renpy\sl2\slast.py", line 842, in execute
+    if widget_id and (widget_id in screen.widget_properties):
+TypeError: unhashable type: 'RevertableList'
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Hide and Seek App 1.0
+Fri Nov 06 14:46:50 2020
